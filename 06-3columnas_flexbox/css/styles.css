@@ -31,13 +31,13 @@ p {
     font-size: 2rem;
 }
 
-.contenedor {
+.container {
     max-width: 1200px;
     width: 95%;
     margin: 0 auto;
 }
 
-.entrada-blog a {
+.blog__entry a {
     display: inline-block;
     background-color: #2196F3;
     color: white;
@@ -47,4 +47,21 @@ p {
     text-transform: uppercase;
 }
 
-/** CODIGO AQUI **/
+@media (min-width: 768px) {
+    .container-flex {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .main-content {
+        width: 60%;
+    }
+
+    .sidebar {
+        width: 20%;
+    }
+
+    .sidebar-1 {
+        order: -1;
+    }
+}
