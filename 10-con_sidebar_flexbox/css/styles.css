@@ -31,21 +31,21 @@ p {
     font-size: 2rem;
 }
 
-.contenedor {
+.container {
     max-width: 1200px;
     width: 95%;
     margin: 0 auto;
 }
 
-.entrada-blog a {
-    display: inline-block;
-    background-color: #2196F3;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
+@media (min-width: 768px) {
+    .container-flex {
+        display: flex;
+        gap: 2rem;
+    }
+    .main-content {
+        flex-basis: calc(70% - 1rem);
+    }
+    .sidebar {
+        flex-basis: calc(30% - 1rem);
+    }
 }
-
-
-/** CODIGO AQUI **/
