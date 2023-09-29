@@ -27,7 +27,7 @@ h2 {
     font-size: 3.2rem;
 }
 
-.contenedor {
+.container {
     max-width: 1200px;
     width: 95%;
     margin: 0 auto;
@@ -37,7 +37,7 @@ p {
     font-size: 2rem;
 }
 
-.entrada-blog a {
+.blog__entry a {
     display: inline-block;
     background-color: #2196F3;
     color: white;
@@ -47,5 +47,27 @@ p {
     text-transform: uppercase;
 }
 
+@media (min-width: 768px) {
+    .container-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 20% 60% 20%);
+        grid-auto-flow: column;
+        column-gap: 2rem;
+    }
+    .main__content {
+        grid-column: 2 / 3;
+    }
+    .aside_l {
+        grid-column: 1 / 2;
+    }
 
-/** CODIGO AQUI **/
+    /* .main__content {
+        order: 2;
+    }
+    .aside_l {
+        order: 1;
+    }
+    .aside_r {
+        order: 3;
+    } */
+}
