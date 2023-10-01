@@ -20,10 +20,9 @@ img {
 }
 
 h1 {
-    font-size: 4rem;
+    text-align: center;
+    font-size: 3rem;
 }
-
-/** CODIGO AQUI **/
 
 h2 {
     font-size: 3.2rem;
@@ -33,20 +32,18 @@ p {
     font-size: 2rem;
 }
 
-.contenedor {
+.container {
     max-width: 1200px;
     width: 95%;
     margin: 0 auto;
 }
 
-.entrada-blog a {
-    display: inline-block;
-    background-color: #2196F3;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
+@media (min-width: 768px) {
+    h1 { font-size: 4rem; }
 }
-
-/** CODIGO AQUI **/
+@media (min-width: 992px) {
+    h1 { 
+        font-size: 5rem; 
+        text-align: left;
+    }
+}
