@@ -31,20 +31,31 @@ p {
     font-size: 2rem;
 }
 
-.contenedor {
+.container {
     max-width: 1200px;
     width: 95%;
     margin: 0 auto;
 }
 
-.entrada-blog a {
-    display: inline-block;
-    background-color: #2196F3;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
+@media (min-width: 768px) {
+    .container-flex {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .main-content {
+        display: flex;
+        gap: 2rem;
+    }
 }
 
-/** CODIGO AQUI **/
+@media (min-width: 992px) {
+    .container-flex {
+        flex-direction: row-reverse;
+        gap: 2rem;
+    }
+    .main-content {
+        flex-direction: column;
+        flex: calc(66.6% - 2rem);
+    }
+    .sidebar { flex: calc(33.3% - 2rem); }
+}
