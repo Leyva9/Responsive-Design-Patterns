@@ -26,14 +26,12 @@ p {
     font-size: 2rem;
 }
 
-.entrada-blog a {
-    display: inline-block;
-    background-color: #2196F3;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
+.container {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
 }
 
-/** CODIGO AQUI **/
+img {
+    width: 100%;
+}
